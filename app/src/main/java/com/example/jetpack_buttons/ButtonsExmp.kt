@@ -1,6 +1,7 @@
 package com.example.jetpack_buttons
 
 import android.widget.Toast
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -47,12 +48,14 @@ fun ButtonExmp() {
                 .padding(horizontal = 16.dp),
             shape = RoundedCornerShape(10.dp),
             colors = ButtonDefaults.buttonColors(
-                contentColor = Color.Black,
+                contentColor = Color.Blue,
                 containerColor = Color.Green
             ),
             elevation = ButtonDefaults.buttonElevation(
-                defaultElevation = 10.dp
-            )
+                defaultElevation = 10.dp,
+                pressedElevation = 20.dp
+            ),
+            border = BorderStroke(2.dp, Color.Blue)
         ) {
 
             Row(
